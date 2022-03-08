@@ -31,6 +31,8 @@ namespace demologin
         {
             this.lbluser = new System.Windows.Forms.Label();
             this.txtuser = new System.Windows.Forms.TextBox();
+            this.lblpw = new System.Windows.Forms.Label();
+            this.txtpw = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbluser
@@ -49,11 +51,29 @@ namespace demologin
             this.txtuser.Size = new System.Drawing.Size(228, 20);
             this.txtuser.TabIndex = 1;
             // 
+            // lblpw
+            // 
+            this.lblpw.AutoSize = true;
+            this.lblpw.Location = new System.Drawing.Point(166, 96);
+            this.lblpw.Name = "lblpw";
+            this.lblpw.Size = new System.Drawing.Size(52, 13);
+            this.lblpw.TabIndex = 2;
+            this.lblpw.Text = "password";
+            // 
+            // txtpw
+            // 
+            this.txtpw.Location = new System.Drawing.Point(243, 96);
+            this.txtpw.Name = "txtpw";
+            this.txtpw.Size = new System.Drawing.Size(228, 20);
+            this.txtpw.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtpw);
+            this.Controls.Add(this.lblpw);
             this.Controls.Add(this.txtuser);
             this.Controls.Add(this.lbluser);
             this.Name = "Form1";
@@ -67,6 +87,8 @@ namespace demologin
 
         private System.Windows.Forms.Label lbluser;
         private System.Windows.Forms.TextBox txtuser;
+        private System.Windows.Forms.Label lblpw;
+        private System.Windows.Forms.TextBox txtpw;
     }
 }
 
