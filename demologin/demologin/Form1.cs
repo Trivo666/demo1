@@ -17,6 +17,14 @@ namespace demologin
             InitializeComponent();
         }
 
-        
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            string u = txtuser.Text;
+            string p = txtpw.Text;
+            if(u=="admin"&&p=="admin")
+            {
+                MessageBox.Show("Login successful");
+            }
+        }
     }
 }
